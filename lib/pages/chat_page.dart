@@ -151,10 +151,10 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
               margin: const EdgeInsets.symmetric(horizontal: 4.0),
               child: Platform.isIOS 
                 ? CupertinoButton(
-                    child: const Text("Enviar"), 
                     onPressed: _estaEscribiendo
                       ? () => _handleSubmit(_textController.text.trim())
                       : null,
+                    child: const Text("Enviar"),
                   )
 
                 : Container(
@@ -181,7 +181,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
 
   _handleSubmit(String texto){
 
-    if( texto.length == 0) return; 
+    if( texto.length == 0 ) return; 
 
     _textController.clear();
     _focusNode.requestFocus();

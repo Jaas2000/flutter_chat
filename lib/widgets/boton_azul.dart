@@ -17,15 +17,15 @@ class BotonAzul extends StatelessWidget {
       elevation: 2,
       highlightElevation: 5,
       color:Colors.blue,
-      shape: StadiumBorder(),
+      shape: const StadiumBorder(),
+      onPressed: onPressed,
       child: Container(
         width: double.infinity,
         height: 55,
         child: Center(
-          child: Text(this.text, style: TextStyle(color: Colors.white, fontSize: 17)),
+          child: Text(text, style: const TextStyle(color: Colors.white, fontSize: 17)),
         ),
       ),
-      onPressed: this.onPressed,
     );
   }
 }

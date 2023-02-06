@@ -91,8 +91,6 @@ class AuthService with ChangeNotifier {
       final loginResponse = loginResponseFromJson(resp.body);
       usuario = loginResponse.usuario;
 
-      // await _guardarToken(registerResponse.token);
-
       return true;
     } else {
 

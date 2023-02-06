@@ -18,14 +18,14 @@ class Labels extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text(this.titulo, style: TextStyle(color: Colors.black54, fontSize: 15, fontWeight: FontWeight.w300),),
+          Text(titulo, style: const TextStyle(color: Colors.black54, fontSize: 15, fontWeight: FontWeight.w300),),
 
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
 
           GestureDetector(
-            child: Text(this.subTitulo, style: TextStyle(color: Colors.blue[600], fontSize: 18, fontWeight: FontWeight.bold),),
+            child: Text(subTitulo, style: TextStyle(color: Colors.blue[600], fontSize: 18, fontWeight: FontWeight.bold),),
             onTap: () {
-              Navigator.pushReplacementNamed(context, this.ruta);
+              Navigator.pushReplacementNamed(context, ruta);
             },
           ),
         ],

@@ -14,16 +14,16 @@ class Logo extends StatelessWidget {
     return Center(
       child: Container(
         width: 180,
-        margin: EdgeInsets.only(top: 50),
+        margin: const EdgeInsets.only(top: 50),
         child: Column(
           children: [
-            Image(
+            const Image(
               image: AssetImage('assets/tag-logo.png'),
             ),
 
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
 
-            Text(this.titulo, style: TextStyle(fontSize: 30),)
+            Text(titulo, style: const TextStyle(fontSize: 30),)
           ],
         ),
       ),

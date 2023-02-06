@@ -96,8 +96,7 @@ class _UsuariosPageState extends State<UsuariosPage> {
         ),
         onTap: () {
           print( usuario.nombre );
-          print("hola");
-
+          
           final chatService = Provider.of<ChatService>(context, listen: false);
           chatService.usuarioPara  = usuario;
 
